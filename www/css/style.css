@@ -1,0 +1,59 @@
+/**/
+.center{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.top_logo{
+    margin-top: 40px;    
+}
+
+.content{
+    margin: 30% 0;
+}
+
+.textarea{
+    height: 33px;
+}
+
+.login_text{
+    margin:10px 0;
+}
+
+.a_cancel{
+    text-decoration: none;
+    color: #fff;
+}
+
+.onoffswitch {
+    position: relative; width: 48px; text-align: right;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 25px; padding: 0; line-height: 25px;
+    border: 2px solid #CCCCCC; border-radius: 25px;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 25px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 20px;
+    border: 2px solid #CCCCCC; border-radius: 25px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #49E845;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #49E845;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="lib/onsenui/js/onsenui.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+
+    <script>
+        ons.ready(function() {
+            console.log("Onsen UI is ready!");
+        });
+    </script>
+</head>
+<body>
+    <ons-page class="center">
+        <img class="top_logo" src="img/app_logo.png">
+        <ons-row>
+            <ons-col width="5%"></ons-col>
+            <ons-col>
+                <form action="http://192.168.50.123:8080/cgi-bin/sv_water_AQ.py" method="GET">
+                    <input type="text" name="userName" />
+                    <input type="text" name="pass" />
+                    <input type="submit" value="ログイン"/>
+                </form>
+                <p class="login_text">ユーザ名</p>
+                <textarea class="textarea"></textarea>
+                <p class="login_text">パスワード</p>
+                <textarea class="textarea"></textarea>
+                <p>
+                <ons-button modifier="large--cta">
+                    <a class="a_cancel" href="main.html">ログイン</a>
+                </ons-button>
+                </p>
+                <p>
+                    <a href="http://192.168.50.123:8000/cgi-bin/test.py" style="color:#000;">新規登録の方はこちら</a>
+                </p>
+            </ons-col>
+            <ons-col width="5%"></ons-col>
+        </ons-row>
+    </ons-page>
+</body>
+</html>
